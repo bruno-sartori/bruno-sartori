@@ -1,0 +1,24 @@
+@import '@/styles/main.scss';
+
+.container-title {
+  &__title {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    color: var(--color-white);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.4em;
+    font-style: italic;
+    margin-left: 1em;
+  }
+}

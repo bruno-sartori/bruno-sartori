@@ -1,0 +1,8 @@
+@import '@/styles/main.scss';
+
+.sobre-container {
+  @extend .container;
+
+  background-color: var(--color-indigo);
+  background-size: cover;
+}
