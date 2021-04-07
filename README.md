@@ -1,30 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Hi there, I'm <a href="https://brunosartori.dev" target="_blank">Bruno Sartori</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-## Getting Started
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://linkedin.com/in/bruno-sartori-webmaster)
+[![Website Badge](https://img.shields.io/badge/Website-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://brunosartori.dev)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/bruno.sart/)
+[![Facebook Badge](https://img.shields.io/badge/-Facebook-3b5998?style=flat-square&logo=Facebook&logoColor=white)](https://www.facebook.com/bruno.sartori.92/)
 
-First, run the development server:
+### Glad to see you here! &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=bruno-sartori.bruno-sartori)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I am a full-stack software developer. I love programming, playing games, philosofy, animes and traveling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+As a software developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things that change the world. That's why I like to make things that make a difference.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<img align="right" alt="GIF" src="https://github.com/bruno-sartori/bruno-sartori/blob/master/public/coding.gif?raw=true" width="408" height="318" />
+  
 
-## Learn More
+**Talking about Personal Stuffs:**
 
-To learn more about Next.js, take a look at the following resources:
+- 👨🏻‍💻 I’m currently working on something cool;
+- 🚀 I’m currently learning Artificial Intelligence and Home Automation;
+- 💬 Ask me about anything, I am happy to help;
+- 📫 How to reach me: brunosartori.dev@gmail.com;
+- 📝 [Resume](https://brunosartori.dev/resume.pdf).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+📈 **My GitHub Stats:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=bruno-sartori&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-sartori&exclude_repo=KNN-Image-Classification&show_icons=true&hide_border=true&layout=compact&langs_count=8"/>
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
