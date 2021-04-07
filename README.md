@@ -13,7 +13,7 @@ As a software developer, I enjoy using my obsessive attention to detail, my uneq
 
 <img align="right" alt="GIF" src="https://github.com/bruno-sartori/bruno-sartori/blob/master/public/coding.gif?raw=true" width="408" height="318" />
 
-<br /> <br />  
+</br>   
 
 **Talking about Personal Stuffs:**
 
@@ -23,7 +23,7 @@ As a software developer, I enjoy using my obsessive attention to detail, my uneq
 - 📫 How to reach me: brunosartori.dev@gmail.com;
 - 📝 [Resume](https://brunosartori.dev/resume.pdf).
 
-</br>
+</br></br></br>
 
 
 📈 **My GitHub Stats:**
