@@ -23,7 +23,7 @@ As a software developer, I enjoy using my obsessive attention to detail, my uneq
 - 📫 How to reach me: brunosartori.dev@gmail.com;
 - 📝 [Resume](https://brunosartori.dev/resume.pdf).
 
-</br></br></br></br></br></br>
+</br></br></br></br>
 
 
 📈 **My GitHub Stats:**
