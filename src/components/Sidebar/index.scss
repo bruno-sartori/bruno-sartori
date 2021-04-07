@@ -1,0 +1,29 @@
+@import '~styles/colors';
+@import '~styles/mixins';
+
+.sidebar {
+  border-radius: 25px;
+  background-color: $blue;
+  display: inline-block;
+  width: 100%;
+  height: calc(100vh - 20px);
+
+  &__logo {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+    figure {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

@@ -1,0 +1,19 @@
+@import '~styles/mixins';
+@import '~styles/variables';
+
+.grid-item {
+  padding: $grid-padding;
+
+  @for $i from 0 through $grid-columns {
+    $col-span: $i;
+
+    &__col--#{$i} {
+      grid-column: span #{$col-span};
+    }
+  }
+
+  @include mobile-portrait {
+    grid-column: span 12;
+  }
+}
+

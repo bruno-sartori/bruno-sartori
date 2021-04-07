@@ -1,0 +1,41 @@
+@import '~styles/colors';
+@import '~styles/mixins';
+
+.login-banner {
+  padding: 20px 30px;
+
+  &__title {
+    color: $white;
+    margin-left: 40px;
+    font-size: 12px;
+  }
+
+  &__copyright {
+    font-size: 9px;
+    color: $white;
+    text-align: center;
+  }
+
+
+  @include mobile-portrait {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__title {
+      font-size: 25px;
+      margin-left: 0;
+    }
+
+    &__copyright {
+      display: none;
+    }
+
+    &__image {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

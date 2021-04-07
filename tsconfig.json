@@ -6,6 +6,51 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
+    "paths": {
+      "@public/*": [
+        "public/*"
+      ],
+      "@images/*": [
+        "src/assets/images/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@scenes/*": [
+        "src/scenes/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@actions/*": [
+        "src/store/actions/*"
+      ],
+      "@reducers/*": [
+        "src/store/reducers/*"
+      ],
+      "@selectors/*": [
+        "src/store/selectors/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
