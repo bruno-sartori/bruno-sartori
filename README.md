@@ -12,7 +12,8 @@ I am a full-stack software developer. I love programming, playing games, philoso
 As a software developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things that change the world. That's why I like to make things that make a difference.
 
 <img align="right" alt="GIF" src="https://github.com/bruno-sartori/bruno-sartori/blob/master/public/coding.gif?raw=true" width="408" height="318" />
-  
+
+<br /> <br />  
 
 **Talking about Personal Stuffs:**
 
