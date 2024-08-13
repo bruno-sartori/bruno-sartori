@@ -14,7 +14,7 @@
 
 ### Glad to see you here!
 
-Hey guys, I'm Bruno Sartori. I am a Fullstack developer from São Paulo, Brazil. I'm currently  working on [@agilecontent](https://github.com/agilecontent) as a Smart TV Front-End Engineer.
+Hey guys, I'm Bruno Sartori. I am a Fullstack developer from São Paulo, Brazil. I'm currently working on Agile Content as a Smart TV Front-End Engineer.
 <br />
 I have some works with TypeScript, Node.js, Python and C++, contact me if you have same interesting or some questions!
 <br /><br />
