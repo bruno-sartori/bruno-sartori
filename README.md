@@ -1,3 +1,5 @@
+<a href="https://www.linkedin.com/in/bruno-sartori-dev"><img src="https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev"/></a>
+
 [![Linkedin Badge](https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev)](https://www.linkedin.com/in/bruno-sartori-dev)
 [![Medium Badge](https://img.shields.io/badge/-@brunosartori.dev-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@brunosartori.dev)](https://medium.com/@brunosartori.dev)
 [![Website Badge](https://img.shields.io/badge/-brunosartori.dev-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://brunosartori.dev)](https://brunosartori.dev)
