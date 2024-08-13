@@ -14,6 +14,7 @@
 
 Hey guys, I'm Bruno Sartori. I am a Fullstack developer from São Paulo, Brazil. I'm currently  working on [@agilecontent](https://github.com/agilecontent) as a Smart TV Front-End Engineer.
 I have some works with TypeScript, Node.js, Python and C++, contact me if you have same interesting or some questions!
+<br /><br />
 
 <img align="right" alt="GIF" src="https://github.com/bruno-sartori/bruno-sartori/blob/master/public/coding.gif?raw=true" width="408" height="318" />
 
@@ -37,7 +38,7 @@ I have some works with TypeScript, Node.js, Python and C++, contact me if you ha
 [<img align="left" alt="Sass" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" style="padding-right:10px;" />](https://sass-lang.com/)
 [<img align="left" alt="Tailwind CSS" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" style="padding-right:10px;" />](https://eslint.org/)
 [<img align="left" alt="ESlint" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" style="padding-right:10px;" />](https://eslint.org/)
-[<img align="left" alt="Vercel" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" style="padding-right:10px;" />](https://eslint.org/)
+[<img align="left" alt="Vercel" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" style="padding-right:10px;" />](https://vercel.com/)
 
 <br /><br />
 
@@ -50,8 +51,8 @@ I have some works with TypeScript, Node.js, Python and C++, contact me if you ha
 [<img align="left" alt="Visual Studio Code" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />](https://code.visualstudio.com/)
 [<img align="left" alt="Visual Studio" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg" style="padding-right:10px;" />](https://code.visualstudio.com/)
 [<img align="left" alt="Docker" width="35px" style="padding-right: 10px; margin-top: -5px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />](https://www.docker.com/)
-[<img align="left" alt="Figma" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="padding-right:10px;" />](https://code.visualstudio.com/)
-[<img align="left" alt="Jira" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" style="padding-right:10px;" />](https://code.visualstudio.com/)
+[<img align="left" alt="Figma" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style="padding-right:10px;" />](figma.com)
+[<img align="left" alt="Jira" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" style="padding-right:10px;" />](https://www.atlassian.com/software/jira)
 
 
 <br /><br /><br /><br />
