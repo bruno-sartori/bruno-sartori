@@ -1,10 +1,10 @@
-<a href="https://www.linkedin.com/in/bruno-sartori-dev"><img src="https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev"/></a>
-
-[![Linkedin Badge](https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev)](https://www.linkedin.com/in/bruno-sartori-dev)
-[![Medium Badge](https://img.shields.io/badge/-@brunosartori.dev-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@brunosartori.dev)](https://medium.com/@brunosartori.dev)
-[![Website Badge](https://img.shields.io/badge/-brunosartori.dev-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://brunosartori.dev)](https://brunosartori.dev)
-[![Instagram Badge](https://img.shields.io/badge/-brunosartori.dev-purple?style=flat&logo=instagram&logoColor=white&link=https://instagram.com/brunosartori.dev/)](https://instagram.com/brunosartori.dev)
-[![Gmail Badge](https://img.shields.io/badge/-brunosartori.dev@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:brunosartori.dev@gmail.com)](mailto:brunosartori.dev@gmail.com)
+<p align="center">
+<a href="https://www.linkedin.com/in/bruno-sartori-dev"><img src="https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev" /></a>
+<a href="https://medium.com/@brunosartori.dev"><img src="https://img.shields.io/badge/-@brunosartori.dev-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@brunosartori.dev" /></a>
+<a href="https://brunosartori.dev"><img src="https://img.shields.io/badge/-brunosartori.dev-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://brunosartori.dev" /></a>
+<a href="https://instagram.com/brunosartori.dev"><img src="https://img.shields.io/badge/-brunosartori.dev-purple?style=flat&logo=instagram&logoColor=white&link=https://instagram.com/brunosartori.dev/" /></a>
+<a href="mailto:brunosartori.dev@gmail.com"><img src="https://img.shields.io/badge/-brunosartori.dev@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:brunosartori.dev@gmail.com" /></a>
+</p>
 
 <p align="center">
 <img src="https://socialify.git.ci/bruno-sartori/bruno-sartori/image?description=1&descriptionEditable=Software%20Engineer&font=Source%20Code%20Pro&name=1&pattern=Circuit%20Board&theme=Dark" alt="bruno-sartori" width="700" height="300" />
@@ -57,7 +57,7 @@ I have some works with TypeScript, Node.js, Python and C++, contact me if you ha
 [<img align="left" alt="Jira" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" style="padding-right:10px;" />](https://www.atlassian.com/software/jira)
 
 
-<br /><br /><br /><br />
+<br /><br /><br />
 
 ### My Github Stats:
 
