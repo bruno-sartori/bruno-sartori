@@ -34,4 +34,7 @@ As a software developer, I enjoy using my obsessive attention to detail, my uneq
 </p>
 
 
+[![roadmap.sh](https://roadmap.sh/card/tall/66ba2238b64402e052a7ac8e?variant=dark)](https://roadmap.sh)
+
+
 
