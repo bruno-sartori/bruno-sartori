@@ -21,7 +21,7 @@ I have some works with TypeScript, Node.js, Python and C++, contact me if you ha
 
 <img align="right" alt="GIF" src="https://github.com/bruno-sartori/bruno-sartori/blob/master/public/coding.gif?raw=true" width="408" height="318" />
 
-[![roadmap.sh](https://roadmap.sh/card/tall/66ba2238b64402e052a7ac8e?variant=dark&roadmaps=frontend)](https://roadmap.sh)
+[![roadmap.sh](https://roadmap.sh/card/tall/66ba2238b64402e052a7ac8e?variant=dark&roadmaps=frontend%2Cjavascript%2Ctypescript%2Creact)](https://roadmap.sh)
 
 
 ### Languages and Tools:
