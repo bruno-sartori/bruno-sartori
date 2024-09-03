@@ -1,78 +1,62 @@
-import React, { useEffect } from 'react';
-import dynamic from 'next/dynamic';
+"use client";
 
-const Search = dynamic(() => import('@/components/Search'), { ssr: false });
+import React, { useEffect, useRef } from 'react';
+import Search from '@/components/Search';
+import { useMainContext } from '@/app/hooks/mainContext';
 
-const SearchComponent: React.FC = () => {
+const PageFind: React.FC = () => {
+  const { pageFindOpen, setPageFindOpen } = useMainContext();
+  const backdropRef = useRef<HTMLDivElement>(null);
+    
+  const onBackdropClick = (e: any) => {
+    if (!(e.target as Element).closest('#pagefind-container')) {
+      setPageFindOpen(false);
+    }
+  };
+
   useEffect(() => {
-    const magnifyingGlass = document.getElementById('magnifying-glass');
-    const backdrop = document.getElementById('backdrop');
-
     const openPagefind = () => {
-      const searchDiv = document.getElementById('search');
-      const search = searchDiv?.querySelector('input');
-      setTimeout(() => {
-        search?.focus();
-      }, 0);
-      backdrop?.classList.remove('invisible');
-      backdrop?.classList.add('visible');
+      setPageFindOpen(true);
     };
 
     const closePagefind = () => {
-      const search = document.getElementById('search') as HTMLInputElement;
-      if (search) {
-        search.value = '';
-      }
-      backdrop?.classList.remove('visible');
-      backdrop?.classList.add('invisible');
+      setPageFindOpen(false);
     };
 
-    magnifyingGlass?.addEventListener('click', openPagefind);
-
-    document.addEventListener('keydown', (e) => {
+    const onDocKeydown = (e: KeyboardEvent) => {
       if (e.key === '/') {
         e.preventDefault();
         openPagefind();
       } else if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         openPagefind();
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' || e.keyCode === 27) {
+      } else if (e.key === 'Escape' || e.keyCode === 27) {
         closePagefind();
       }
-    });
+    };
 
-    document.addEventListener('click', (event) => {
-      if ((event.target as Element).classList.contains('pagefind-ui__result-link')) {
+    const onDocClick = (e: MouseEvent) => {
+      if ((e.target as Element).classList.contains('pagefind-ui__result-link')) {
         closePagefind();
       }
-    });
+    };
 
-    backdrop?.addEventListener('click', (event) => {
-      if (!(event.target as Element).closest('#pagefind-container')) {
-        closePagefind();
-      }
-    });
-
-    const form = document.getElementById('form');
-    form?.addEventListener('submit', (event) => {
-      event.preventDefault();
-    });
+    document.addEventListener('keydown', onDocKeydown);
+    document.addEventListener('click', onDocClick);
 
     return () => {
-      magnifyingGlass?.removeEventListener('click', openPagefind);
-      backdrop?.removeEventListener('click', closePagefind);
+      document.removeEventListener('keydown', onDocKeydown);
+      document.removeEventListener('click', onDocClick);
     };
-  }, []);
+  });
 
   return (
-    <aside data-pagefind-ignore>
+    <aside>
       <div
+        ref={backdropRef}
+        onClick={onBackdropClick}
         id="backdrop"
-        className="bg-[rgba(0, 0, 0, 0.5)] invisible fixed left-0 top-0 z-50 flex h-screen w-full justify-center p-6 backdrop-blur-sm"
+        className={`bg-[rgba(0, 0, 0, 0.5)] ${pageFindOpen ? 'visible' : 'invisible'} fixed left-0 top-0 z-50 flex h-screen w-full justify-center p-6 backdrop-blur-sm`}
       >
         <div
           id="pagefind-container"
@@ -81,10 +65,11 @@ const SearchComponent: React.FC = () => {
           <Search
             id="search"
             className="pagefind-ui"
+            open={pageFindOpen}
             uiOptions={{
-              showImages: false,
+              showImages: true,
               excerptLength: 15,
-              resetStyles: false,
+              resetStyles: true,
             }}
           />
           <div className="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
@@ -100,4 +85,4 @@ const SearchComponent: React.FC = () => {
   );
 };
 
-export default SearchComponent;
+export default PageFind;

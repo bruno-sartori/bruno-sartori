@@ -37,8 +37,7 @@ const PostNavigation: React.FC<Props> = ({ prevPost, nextPost }) => {
       )}
 
       {nextPost?.slug ? (
-        <Link href={`/blog/${nextPost.slug}`} className="group relative flex flex-grow flex-row-reverse flex-nowrap rounded-lg border border-black/15 px-4 py-4 pr-10 no-underline transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white">
-          
+        <Link href={`/blog/${nextPost.slug}`} className="group relative flex flex-grow flex-row-reverse flex-nowrap rounded-lg border border-black/15 px-4 py-4 pr-10 no-underline transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"> 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"

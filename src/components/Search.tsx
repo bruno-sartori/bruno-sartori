@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Image, { ImageLoaderProps } from 'next/image';
 
 interface UIOptions {
   showImages?: boolean;
@@ -8,13 +9,29 @@ interface UIOptions {
 
 interface SearchProps {
   id?: string;
+  open: boolean;
   className?: string;
   uiOptions?: UIOptions;
 }
 
-const Search: React.FC<SearchProps> = ({ id, className, uiOptions }) => {
+const imageLoader = ({ src, width, quality }: ImageLoaderProps) => {
+  return `https://via.placeholder.com/${width}`
+}
+
+const Search: React.FC<SearchProps> = ({ id, open, className, uiOptions }) => {
+  const inputRef = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<{ title: string; excerpt: string; image?: string }[]>([]);
+
+  useEffect(() => {
+    if (open) {
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 0);
+    } else {
+      setQuery('');
+    }
+  }, [open]);
 
   useEffect(() => {
     if (query.length > 2) {
@@ -54,6 +71,7 @@ const Search: React.FC<SearchProps> = ({ id, className, uiOptions }) => {
     <div id={id} className={className}>
       <input
         type="text"
+        ref={inputRef}
         value={query}
         onChange={handleInputChange}
         placeholder="Search..."
@@ -66,7 +84,7 @@ const Search: React.FC<SearchProps> = ({ id, className, uiOptions }) => {
               <li key={index} className="p-2 border-b last:border-none">
                 <div className="flex items-start">
                   {uiOptions?.showImages && result.image && (
-                    <img src={result.image} alt={result.title} className="w-10 h-10 mr-2" />
+                    <Image loader={imageLoader} src={result.image} width={150} height={150} alt={result.title} className="w-10 h-10 mr-2" />
                   )}
                   <div>
                     <div className="font-bold">{result.title}</div>

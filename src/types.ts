@@ -27,6 +27,7 @@ export interface CollectionEntry<T> {
   title: string;
   slug: string;
   repoURL: string;
+  demoURL?: string;
   pubDate: string;
   readme: string;
   link: string;
@@ -143,3 +144,5 @@ export interface GithubRepo {
 }
 
 export type TApiMethods = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
+
+export type TTheme = 'light' | 'dark' | 'system';

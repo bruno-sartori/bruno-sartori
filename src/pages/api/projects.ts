@@ -1,14 +1,8 @@
 import { CollectionEntry, GithubRepo } from '@/types';
-import { htmlToHeadings, logResponse } from '@/utils';
+import { htmlToHeadings } from '@/utils';
 import { marked } from 'marked';
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { setup, setupCache } from 'axios-cache-adapter';
- 
-const api = setup({
-  cache: setupCache({
-    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
-  })
-});
+import { isValidString } from '@/isValidVariable';
 
 type ResponseData = {
   data: Array<CollectionEntry<'projects'>>
@@ -16,26 +10,46 @@ type ResponseData = {
  
 export default async function handler(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
   try {
-    const config = {
+    const config: RequestInit = {
       headers: {
-        authentication: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
+        Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
         'X-GitHub-Api-Version': '2022-11-28'
-      }
+      },
+      cache: 'force-cache'
     };
 
     const reposUrl = `https://api.github.com/users/bruno-sartori/repos?type=owner&sort=updated`;
-    const response = await api.get<GithubRepo[]>(reposUrl, config);
-    logResponse(response, reposUrl, 'GET');
-    const data = response.data.filter(o => o.private === false && o.fork === false && o.name === 'weeb-logger');
+    const response = await fetch(reposUrl, config);
+
+    if (!response.ok) {
+      res.status(500).json({ data: [] });
+    }
+
+    let data: GithubRepo[] = await response.json();
+    data = data.filter(o => o.private === false && o.fork === false);
 
     const resp: CollectionEntry<'projects'>[] = await Promise.all(data.map(async repo => {
       const repoDetailUrl = `${repo.url}/contents/README.md`;
-      const repoDetail = await api.get<any>(repoDetailUrl, config);
-      logResponse(repoDetail, repoDetailUrl, 'GET');
+      let repoDetail = {
+        data: {},
+        status: 0,
+        statusText: '',
+        config: {},
+        headers: {},
+        request: {},
+        content: '',
+      };
+
+      try {
+        const repoDetailResponse = await fetch(repoDetailUrl, config);
+        repoDetail = await repoDetailResponse.json();
+      } catch (error) {
+        console.error(`1`, error)
+      }
 
       let readme = '';
-      if (repoDetail.data.content !== '') {
-        const buff = Buffer.from(repoDetail.data.content, 'base64');
+      if (isValidString(repoDetail?.content)) {
+        const buff = Buffer.from(repoDetail.content, 'base64');
         readme = buff.toString('ascii');
         readme = await marked.parse(readme)
       }
@@ -61,7 +75,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
     res.status(200).json({ data: resp })
   } catch (error) {
-    console.error(error);
+    console.error(`2`, error);
     res.status(500).json({ data: [] });
   }
 }

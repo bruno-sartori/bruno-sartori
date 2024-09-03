@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     
     data.items = await data.items.map((d: CollectionEntry<'blog'>) => {
       d.headings = htmlToHeadings(d.description);
-      d.slug = d.link.replace(/(.*\/)*/,"").split('?')[0];
+      d.slug = d.link?.replace(/(.*\/)*/,"")?.split('?')?.[0];
       return d;
     });
     

@@ -1,20 +1,24 @@
 // app/blog/page.tsx
-import Layout from '@/app/layout';
 import Container from '@/components/Container';
 import ArrowCard from '@/components/ArrowCard';
-import { BLOG } from '@/consts';
 import { CollectionEntry } from '@/types';
 import { getCollection } from '@/utils';
-
+import { Metadata } from 'next';
+import { BLOG } from '@/consts';
 
 type Acc = {
   [year: string]: CollectionEntry<'blog'>[];
 };
 
+export function generateMetadata(): Metadata {
+  return {
+    title: BLOG.TITLE,
+    description: BLOG.DESCRIPTION,
+  };
+}
+
 async function fetchPosts() {
-  const data: CollectionEntry<'blog'>[] = (await getCollection())
-    // .filter((post) => !post.data.draft)
-    .sort((a, b) => new Date(b.pubDate).valueOf() - new Date(a.pubDate).valueOf());
+  const data: CollectionEntry<'blog'>[] = await getCollection();
 
   const posts = data.reduce<Acc>((acc, post) => {
     const year = new Date(post.pubDate).getFullYear().toString();
@@ -34,34 +38,30 @@ const BlogPage = async () => {
   const { posts, years } = await fetchPosts();
 
   return (
-    <Layout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
-      <main>
-        <Container>
-          <aside data-pagefind-ignore>
-            <div className="space-y-10">
-              <div className="space-y-4">
-                {years.map((year) => (
-                  <section key={year} className="animate space-y-4">
-                    <div className="font-semibold text-black dark:text-white">
-                      {year}
-                    </div>
-                    <div>
-                      <ul className="not-prose flex flex-col gap-4">
-                        {posts[year].map((post) => (
-                          <li key={post.guid}>
-                            <ArrowCard type='blog' entry={post} />
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </section>
-                ))}
-              </div>
-            </div>
-          </aside>
-        </Container>
-      </main>
-    </Layout>
+    <Container>
+      <aside>
+        <div className="space-y-10">
+          <div className="space-y-4">
+            {years.map((year) => (
+              <section key={year} className="animate space-y-4">
+                <div className="font-semibold text-black dark:text-white">
+                  {year}
+                </div>
+                <div>
+                  <ul className="not-prose flex flex-col gap-4">
+                    {posts[year].map((post) => (
+                      <li key={post.guid}>
+                        <ArrowCard type='blog' entry={post} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </Container>
   );
 };
 
