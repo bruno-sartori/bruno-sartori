@@ -1,7 +1,7 @@
 <p align="center">
+<a href="https://brunosartori.dev"><img src="https://img.shields.io/badge/-brunosartori.dev-green?style=flat&logo=Google-Chrome&logoColor=white&link=https://brunosartori.dev" /></a>
 <a href="https://www.linkedin.com/in/bruno-sartori-dev"><img src="https://img.shields.io/badge/-bruno--sartori--dev-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruno-sartori-dev" /></a>
 <a href="https://medium.com/@brunosartori.dev"><img src="https://img.shields.io/badge/-@brunosartori.dev-000000?style=flat&labelColor=000000&logo=Medium&link=https://medium.com/@brunosartori.dev" /></a>
-<a href="https://brunosartori.dev"><img src="https://img.shields.io/badge/-brunosartori.dev-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://brunosartori.dev" /></a>
 <a href="https://instagram.com/brunosartori.dev"><img src="https://img.shields.io/badge/-brunosartori.dev-purple?style=flat&logo=instagram&logoColor=white&link=https://instagram.com/brunosartori.dev/" /></a>
 <a href="mailto:brunosartori.dev@gmail.com"><img src="https://img.shields.io/badge/-brunosartori.dev@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:brunosartori.dev@gmail.com" /></a>
 </p>
