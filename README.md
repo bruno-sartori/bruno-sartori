@@ -29,6 +29,7 @@ I have some works with TypeScript, Node.js, Python and C++, contact me if you ha
 
 [<img align="left" alt="TypeScript" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" style="padding-right:10px;" />](https://www.typescriptlang.org/)
 [<img align="left" alt="JavaScript" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[<img align="left" alt="Rust" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" style="padding-right:10px;" />](https://www.rust-lang.org/)
 [<img align="left" alt="C" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="padding-right:10px;" />](https://isocpp.org/)
 [<img align="left" alt="C++" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="padding-right:10px;" />](https://isocpp.org/)
 [<img align="left" alt="Csharp" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" style="padding-right:10px;" />](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
